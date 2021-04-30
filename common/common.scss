@@ -1,0 +1,28 @@
+.expanded-create-topic-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  input.expanded-create-topic {
+    border-radius: 8px;
+    height: 37px;
+    margin: 0 0 0 1em;
+    padding-right: 40px;
+    min-width: 275px;
+    transition: box-shadow 0.1s ease-in-out;
+    &:focus {
+      outline: none;
+      box-shadow: 0px 0px 0px 1px var(--tertiary);
+    }
+  }
+  .expanded-create-topic-button {
+    position: absolute;
+    right: 8px;
+    height: 25px;
+    width: 25px;
+    border-radius: 8px;
+  }
+}
+
+#create-topic {
+  display: none;
+}
